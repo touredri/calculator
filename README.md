@@ -9,7 +9,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -37,6 +36,7 @@ This calculator project is based on an online website that allows users to do so
 - HTML
 - CSS
 - JavaScript
+- React
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -58,19 +58,11 @@ This calculator project is based on an online website that allows users to do so
 
 ### Key Features <a name="key-features"></a>
 
-- **JavaScript with Objects**
-- **Local Storage**
-- **Basic UI with plain HTML**
+- **Setup environment**
+- **Create App using CRA**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link]( https://touredri.github.io/calculator/dist/)
-
-
-<!-- - [video Link](https://www.loom.com/share/1f2943ca12ee4b4e97db22f208077ecb) -->
 
 <!-- GETTING STARTED -->
 
@@ -110,7 +102,8 @@ Example commands:
 
 Install this project with:
 
-npm
+npm install
+npm start
 
 Example command:
 
@@ -179,8 +172,8 @@ https://touredri.github.io/calculator/
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Add CSS style to the application to make it match with the wireframe**
-- [ ] **Modidy the To do List to have navigation bar book list Add books contact info**
-- [ ] **Create class methods to ass and remove books**
+- [ ] **Create full website**
+- [ ] **Create functional component**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,7 +183,7 @@ https://touredri.github.io/calculator/
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/touredri/todolist/issues).
+Feel free to check the [issues page](https://github.com/touredri/calculator/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
