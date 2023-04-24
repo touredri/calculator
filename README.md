@@ -103,7 +103,6 @@ Example commands:
 Install this project with:
 
 npm install
-npm start
 
 Example command:
 
@@ -116,12 +115,12 @@ Example command:
 
 To run the project, execute the following command:
 
-npm start or live server
+npm start
 
 Example command:
 
 ```sh
-  GitHub Pages Server
+  npm start
 ```
 
 ### Run tests
