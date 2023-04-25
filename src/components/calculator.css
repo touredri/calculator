@@ -1,0 +1,34 @@
+.calculator {
+  width: 60%;
+}
+
+.calculator__display {
+  background-color: #9b9b9a;
+  color: rgb(250, 246, 246);
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: right;
+  border: none;
+  outline: none;
+}
+
+.calculator__keys {
+  background-color: azure;
+  border: 1px solid;
+}
+
+.calculator__key {
+  font-size: 35px;
+  width: 117px;
+  height: 100px;
+  border: transparent;
+}
+
+.calculator__key--operator {
+  background-color: #f9a825;
+  color: #fff;
+}
+
+.zero {
+  width: 235px;
+}
