@@ -10,6 +10,7 @@
   text-align: right;
   border: none;
   outline: none;
+  height: 100px;
 }
 
 .calculator__keys {
