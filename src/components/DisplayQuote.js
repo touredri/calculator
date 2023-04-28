@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './calculator.css';
 
 const DisplayQuote = () => {
   const [quote, setQuote] = useState([]);
@@ -28,13 +29,17 @@ const DisplayQuote = () => {
     };
     fetchData();
   }, []);
-  if (isloading) return <div> Wait a moment....</div>;
+  if (isloading) return <div className="wait"> Wait a moment....</div>;
   if (hasError) return <div>Oups something wrong!!</div>;
 
   return (
-    <div>
+    <div className="quote">
       <div>Quote of the day</div>
-      <p>{quote[0]}</p>
+      <p>
+        &quot;
+        {quote[0]}
+        &quot;
+      </p>
       <p>
         -
         {quote[1]}

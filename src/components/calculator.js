@@ -3,7 +3,6 @@ import './calculator.css';
 import CalculatorKey from './calculatorkeys';
 import calculate from '../logic/calculate';
 import DisplayResult from './display';
-import DisplayQuote from './DisplayQuote';
 
 const Calculator = () => {
   const [obj, setObj] = useState({ total: null, next: null, operation: null });
@@ -14,9 +13,8 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <DisplayResult result={obj.total} next={obj.next} operation={obj.operation} />
-      <CalculatorKey handleClick={handleClick} />
       { ' ' }
-      <DisplayQuote />
+      <CalculatorKey handleClick={handleClick} />
     </div>
   );
 };
