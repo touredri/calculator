@@ -3,11 +3,15 @@ import './calculator.css';
 
 const DisplayResult = ({ result, next, operation }) => (
   <div className="calculator__display">
-    <div>{next}</div>
+    <div>
+      {result}
+      {' '}
+      {operation}
+      {' '}
+      {next}
+    </div>
+    <div />
     {' '}
-    <div>{operation}</div>
-    {' '}
-    <div>{result}</div>
   </div>
 );
 

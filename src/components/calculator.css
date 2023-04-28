@@ -10,7 +10,7 @@
   text-align: right;
   border: none;
   outline: none;
-  height: 100px;
+  height: 60px;
 }
 
 .calculator__keys {
@@ -51,4 +51,13 @@ button:focus {
 
 .zero {
   grid-column: span 2;
+}
+
+.quote,
+.wait {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #2600ff;
+  width: 60%;
+  font-weight: bold;
 }

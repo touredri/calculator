@@ -13,6 +13,7 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <DisplayResult result={obj.total} next={obj.next} operation={obj.operation} />
+      { ' ' }
       <CalculatorKey handleClick={handleClick} />
     </div>
   );
