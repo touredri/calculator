@@ -11,10 +11,31 @@ const Calculator = () => {
     setObj(newObj);
   };
   return (
-    <div className="calculator">
-      <DisplayResult result={obj.total} next={obj.next} operation={obj.operation} />
-      { ' ' }
-      <CalculatorKey handleClick={handleClick} />
+    <div
+      className="calculator"
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        marginTop: '60px',
+        gap: '20px',
+        width: '100%',
+        padding: '20px',
+      }}
+    >
+      <h2 style={{ textAlign: 'left' }}>Let&apos;s do some Math Operations</h2>
+      <div
+        style={{
+          width: '70%',
+          marginRight: '40px',
+        }}
+      >
+        <DisplayResult
+          result={obj.total}
+          next={obj.next}
+          operation={obj.operation}
+        />
+        <CalculatorKey handleClick={handleClick} />
+      </div>
     </div>
   );
 };
