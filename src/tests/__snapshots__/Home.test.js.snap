@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correct 1`] = `
+<div>
+  <div
+    class="home"
+  >
+    <h2>
+      Welcome to our page
+    </h2>
+    <div
+      style="padding: 50px;"
+    >
+      Welcome to our math website! Here, you can easily perform various mathematical operations and calculations, whether you're a student, a teacher, or just someone who loves math. Our user-friendly interface makes it easy to input equations and get accurate results in no time. Whether you need to solve equations, graph functions, or perform complex calculations, we've got you covered. So, let's get started and explore the exciting world of mathematics together!
+    </div>
+  </div>
+</div>
+`;

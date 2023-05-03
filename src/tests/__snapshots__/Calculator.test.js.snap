@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="calculator"
+    style="display: flex; justify-content: space-between; margin-top: 60px; gap: 20px; width: 100%; padding: 20px;"
+  >
+    <h2
+      style="text-align: left;"
+    >
+      Let's do some Math Operations
+    </h2>
+    <div
+      style="width: 70%; margin-right: 40px;"
+    >
+      <div
+        class="calculator__display"
+      >
+        <div>
+            
+        </div>
+        <div />
+         
+      </div>
+      <div
+        class="calculator__keys"
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <button
+                  class="calculator__key calculator__key--operator"
+                  name="AC"
+                  type="button"
+                >
+                  AC
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key calculator__key--operator"
+                  name="+/-"
+                  type="button"
+                >
+                  +/-
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key calculator__key--operator"
+                  name="%"
+                  type="button"
+                >
+                  %
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key calculator__key--operator"
+                  name="÷"
+                  type="button"
+                >
+                  ÷
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="7"
+                  type="button"
+                >
+                  7
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="8"
+                  type="button"
+                >
+                  8
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="9"
+                  type="button"
+                >
+                  9
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key calculator__key--operator"
+                  name="x"
+                  type="button"
+                >
+                  ×
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="4"
+                  type="button"
+                >
+                  4
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="5"
+                  type="button"
+                >
+                  5
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="6"
+                  type="button"
+                >
+                  6
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key calculator__key--operator"
+                  name="-"
+                  type="button"
+                >
+                  -
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="1"
+                  type="button"
+                >
+                  1
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="2"
+                  type="button"
+                >
+                  2
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="3"
+                  type="button"
+                >
+                  3
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key calculator__key--operator"
+                  name="+"
+                  type="button"
+                >
+                  +
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td
+                colspan="2"
+              >
+                <button
+                  class="calculator__key zero"
+                  name="0"
+                  type="button"
+                >
+                  0
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key"
+                  name="."
+                  type="button"
+                >
+                  .
+                </button>
+              </td>
+              <td>
+                <button
+                  class="calculator__key calculator__key--operator"
+                  name="="
+                  type="button"
+                >
+                  =
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
