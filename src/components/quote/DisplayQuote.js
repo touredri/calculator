@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './calculator.css';
+import '../calculator.css';
 
 const DisplayQuote = () => {
   const [quote, setQuote] = useState([]);
@@ -33,9 +33,18 @@ const DisplayQuote = () => {
   if (hasError) return <div>Oups something wrong!!</div>;
 
   return (
-    <div className="quote">
-      <div>Quote of the day</div>
-      <p>
+    <div
+      className="quote"
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        width: '100%',
+      }}
+    >
+      <div style={{ textAlign: 'center', color: 'black' }}>Quote of the day</div>
+      <p style={{ textAlign: 'center' }}>
         &quot;
         {quote[0]}
         &quot;
