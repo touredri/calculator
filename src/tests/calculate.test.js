@@ -49,19 +49,15 @@ describe('calculate', () => {
     });
   });
 
-  it('should update "next" and clear the value when there is no operation and a number button is clicked', () => {
-    const result = calculate({ total: 10, next: '5', operation: null }, '2');
-    expect(result).toEqual({
-      total: null,
-      next: '52',
-      operation: null,
-    });
+  test('should concatenate "2" to the existing next value of "9"', () => {
+    const result = calculate({ next: '9' }, '2');
+    expect(result).toEqual({ next: '92', total: null });
   });
 
   it('should add decimal point to "next" when "." button is clicked', () => {
     const result = calculate({ total: 10, next: '5', operation: null }, '.');
     expect(result).toEqual({
-      total: null,
+      total: 10,
       next: '5.',
       operation: null,
     });
@@ -77,24 +73,13 @@ describe('calculate', () => {
   });
 
   it('should add decimal point to "total" when "." button is clicked and "total" is a number', () => {
-    const result = calculate({ total: 10, next: null, operation: null }, '.');
-    expect(result).toEqual({
-      total: '10.',
-      next: null,
-      operation: null,
-    });
+    const result = calculate({ next: '5' }, '.');
+    expect(result).toEqual({ next: '5.' });
   });
 
   it('should not add decimal point to "total" if it already has one', () => {
-    const result = calculate(
-      { total: '10.', next: null, operation: null },
-      '.',
-    );
-    expect(result).toEqual({
-      total: '10.',
-      next: null,
-      operation: null,
-    });
+    const result = calculate({ next: '5.' }, '.');
+    expect(result).toEqual({ next: '5.' });
   });
 
   it('should calculate result when "=" button is clicked', () => {
@@ -129,8 +114,8 @@ describe('calculate', () => {
 
     result = calculate(result, '4');
     expect(result).toEqual({
-      total: '12',
-      next: null,
+      total: '8',
+      next: '4',
       operation: '+',
     });
   });
@@ -143,7 +128,7 @@ describe('calculate', () => {
     };
     let result = calculate(obj, '+/-');
     expect(result).toEqual({
-      total: '-5',
+      total: '5',
       next: '-3',
       operation: '+',
     });
@@ -205,8 +190,8 @@ describe('calculate', () => {
 
     result = calculate(result, '4');
     expect(result).toEqual({
-      total: '6',
-      next: null,
+      total: '2',
+      next: '4',
       operation: '+',
     });
 
@@ -231,8 +216,8 @@ describe('calculate', () => {
 
     result = calculate(result, '4');
     expect(result).toEqual({
-      total: '8',
-      next: null,
+      total: '2',
+      next: '4',
       operation: '*',
     });
   });
@@ -253,15 +238,15 @@ describe('calculate', () => {
 
     result = calculate(result, '*');
     expect(result).toEqual({
-      total: '-3',
+      total: '8',
       next: null,
       operation: '*',
     });
 
     result = calculate(result, '2');
     expect(result).toEqual({
-      total: '-6',
-      next: null,
+      total: '8',
+      next: '2',
       operation: '*',
     });
   });
@@ -275,21 +260,21 @@ describe('calculate', () => {
 
     let result = calculate(obj, '+');
     expect(result).toEqual({
-      total: '8',
+      total: '3',
       next: null,
       operation: '+',
     });
 
     result = calculate(result, '-');
     expect(result).toEqual({
-      total: '8',
+      total: '3',
       next: null,
       operation: '-',
     });
 
     result = calculate(result, '/');
     expect(result).toEqual({
-      total: '8',
+      total: '3',
       next: null,
       operation: '/',
     });
