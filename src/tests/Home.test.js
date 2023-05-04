@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Home from '../components/home';
+import Home from '../components/Home';
 
 describe('Home', () => {
   it('renders the text', () => {
