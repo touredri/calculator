@@ -41,6 +41,7 @@ const CalculatorKey = ({ handleClick }) => (
             className="calculator__key calculator__key--operator"
             name="÷"
             onClick={() => handleClick('÷')}
+            data-testid="divide"
           >
             &divide;
           </button>
@@ -142,6 +143,7 @@ const CalculatorKey = ({ handleClick }) => (
             className="calculator__key"
             name="2"
             onClick={() => handleClick('2')}
+            data-testid="two"
           >
             2
           </button>
