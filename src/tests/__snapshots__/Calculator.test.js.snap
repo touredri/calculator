@@ -59,6 +59,7 @@ exports[`Calculator should render correctly 1`] = `
               <td>
                 <button
                   class="calculator__key calculator__key--operator"
+                  data-testid="divide"
                   name="÷"
                   type="button"
                 >
@@ -155,6 +156,7 @@ exports[`Calculator should render correctly 1`] = `
               <td>
                 <button
                   class="calculator__key"
+                  data-testid="two"
                   name="2"
                   type="button"
                 >

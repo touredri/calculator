@@ -4,14 +4,13 @@ import { MemoryRouter } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import '@testing-library/jest-dom/extend-expect';
 
-
 test('renders navigation links', () => {
   const { getByText } = render(
     <MemoryRouter>
       <NavBar />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
-  
+
   expect(getByText('Math Magicians')).toBeInTheDocument();
   expect(getByText('Home')).toHaveAttribute('href', '/');
   expect(getByText('Calculator')).toHaveAttribute('href', '/calculator');
